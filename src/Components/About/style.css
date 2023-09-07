@@ -1,0 +1,196 @@
+/*
+.about__container{
+    display: flex;
+    min-width: 100vw;
+    margin: 4rem 0rem;
+    justify-content: space-around;
+}
+
+.about__container{
+    min-width: 30rem;
+}
+
+.about__vision{
+    max-width: 26rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.vision__image__container{
+    display: flex;
+    justify-content: center;
+}
+.vision__image{
+    max-width: 300px;
+}
+.about__mission{
+    min-width: 10rem;
+}
+
+.about__heading{
+    font-family: Good-brush;
+    font-size: 70px/90px;
+    width: 100vw;
+}
+
+.about__list__item{
+    line-height: 200%;
+    margin-left: -1.2rem;
+    width: auto;
+}
+
+.about__mission__subheading{
+    width: 30rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .about__container{
+        display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+    }
+} */
+
+
+
+/* Style for the entire container */
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 8rem;
+}
+
+/* Style for the vision section */
+.about__vision {
+    width: 35.125;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    text-align: left;
+    padding: 6rem 0rem 0rem 6rem;
+}
+.about__vision h1, .about__vision p{
+    width: 27rem;
+}
+
+/* Style for the mission section */
+.about__mission {
+    width: 38.875;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding-top: 6rem;
+}
+
+.about__mission .about__mission__subheading, .about__list__item, .about__vision p{
+    font-family: Gilroy;
+}
+/* Style for the headings */
+.about__heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: GoodBrush;
+}
+
+/* Style for the mission subheading */
+.about__mission__subheading {
+    font-size: 1rem;
+    font-weight: medium;
+    margin-bottom: 20px;
+    font-family: Gilroy;
+}
+
+/* Style for the list */
+.about__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    font-family: Gilroy;
+}
+
+/* Style for the list items */
+.about__list__item {
+    margin-bottom: 10px;
+    font-family: Gilroy;
+    height: 3rem;
+}
+
+.about__mission {
+    width: 32rem;
+
+}
+
+.about__list__item::before {
+    content: "•";
+}
+
+/* Style for the vision image */
+.vision__image__container {
+    margin-top: 30px;
+}
+
+.vision__image {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 40rem;
+}
+
+/* Media queries for responsive design */
+
+/* Small screens */
+@media (max-width: 767px) {
+    .about__container {
+        padding: 0 20px;
+    }
+
+    .about__vision,
+    .about__mission {
+        margin-bottom: 30px;
+        
+    }
+    .about__vision p{
+        width: 95vw;
+    }
+    .about__mission {
+        margin-bottom: 30px;
+        width: 90vw;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .about__vision{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    } 
+    .about__mission{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .vision__image{
+        margin-left: 2rem;
+    }
+}
+
+/* Medium and large screens */
+@media (min-width: 768px) {
+    .about__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about__vision {
+        margin-right: 30px;
+        text-align: left;
+    }
+
+    .about__mission {
+        text-align: left;
+    }
+}

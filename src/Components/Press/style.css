@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Good-brush;
+    src: url(../../fonts/good_brush/Good\ Brush.ttf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../../fonts/Gilroy/Gilroy-Medium.ttf);
+}
+
+.press__container {
+    padding: 4rem;
+}
+
+.heading {
+    font-size: 70px/90px;
+    font-family: Good-brush;
+}
+
+.press__line,
+.privacy__container {
+    margin: 1.5rem 0rem;
+    font-family: Gilroy;
+    font-size: 16px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 480px) {
+    .press__container {
+        padding: 1rem;
+        padding-top: 4rem;
+    }
+}

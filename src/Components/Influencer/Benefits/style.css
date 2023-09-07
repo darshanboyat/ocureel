@@ -1,0 +1,39 @@
+.benefits__main{
+    text-align: left;
+}
+.benefits__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.benefits__main h1{
+    text-align: center;
+    margin: 2rem 0;
+    font-family: GoodBrush;
+}
+.benefits__content ul li{
+    list-style: none;
+    padding: .7rem 0rem;
+    font-family: Gilroy;
+    font-weight: 900;
+}
+.benefits__content ul li span{
+    font-family: GoodBrush;
+    font-size: 1.5rem;
+    background-color: rgba(19, 17, 118, 3%);
+    text-align: center;
+    padding-left: .5rem;
+    border-radius: 5rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .benefits__content{
+        flex-direction: column;
+    }
+    .benefits__main h1{
+        padding: 1rem;
+    }
+    .benefits__content img{
+        width: 54%;
+    }
+}

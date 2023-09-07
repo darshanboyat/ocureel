@@ -1,0 +1,296 @@
+.container {
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.giveaway__player #vp-preview{
+    transform: scaleX(2);
+}
+.giveaway__video__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.giveaway__container {
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 6rem 1rem;
+}
+
+.giveaway__heading {
+    font-family: GoodBrush;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.giveaway__heading h1 {
+    font-size: 13rem;
+    line-height: 80%;
+}
+
+.giveaway__heading h2 {
+    font-size: 3rem;
+    line-height: 50%;
+}
+
+.giveaway__content h6,
+.giveaway__content h5,
+.giveaway__content h4,
+.giveaway__content h3 {
+    font-weight: 900;
+}
+
+.giveaway__content {
+    font-weight: 900;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.giveaway__content h2 {
+    font-weight: 800;
+    text-align: center;
+}
+
+.giveaway__videos {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: -6rem;
+}
+
+.price__money h3 {
+    font-weight: 700;
+}
+
+.giveaway__waiting h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.giveaway__steps ul li {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+.giveaway__steps ul li span {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.giveaway__rule ul li {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.giveaway__content h4 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.check__out h4 {
+    text-align: left;
+    font-weight: 700;
+    color: black;
+}
+
+.no__catch h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.no__catch h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.giveaway__rule {
+    text-align: start;
+}
+
+.giveaway__content ul li {
+    list-style: none;
+}
+
+/* Media queries for responsive design */
+
+/* Small screens */
+@media (max-width: 767px) {
+    .giveaway__video__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .giveaway__videos {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-left: -6rem;
+    }
+
+    .giveaway__heading {
+        margin: 4rem 0;
+    }
+
+    .giveaway__heading h1 {
+        font-size: 8rem;
+        line-height: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .giveaway__videos {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-left: 1.5rem;
+    }
+}
+
+/* Medium and large screens */
+@media (min-width: 768px) {
+    .giveaway__videos {
+        display: flex;
+        justify-content: center;
+        margin: 2rem auto;
+        margin-left: -12rem;
+    }
+}
+
+
+
+
+
+
+/* video cards */
+.relative {
+    position: relative;
+    max-width: 100vw;
+    margin: 4rem 0;
+}
+
+.position__odd {
+    bottom: -3rem;
+    right: -4rem;
+}
+
+.position__even {
+    top: -2rem;
+    left: -3rem;
+}
+
+.position__odd::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    transform: translate(10px, -10px);
+    z-index: -1;
+    background: linear-gradient(135deg, #e68af8, #8be0f7, #d4c8fc, #fadcfb);
+    border-radius: 0.75rem;
+    /* filter: blur(10px); */
+}
+
+.position__even::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    transform: translate(-10px, -7px);
+    z-index: -1;
+    background: linear-gradient(135deg, #e68af8, #8be0f7, #d4c8fc, #fadcfb);
+    border-radius: 0.75rem;
+    /* filter: blur(10px); */
+}
+
+.giveaway__new__cards {
+    position: absolute;
+    background-color: white;
+    padding: 2rem .75rem;
+    width: 200px;
+    height: 150px;
+    border-radius: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 10px 10px 30px rgb(74, 74, 74);
+
+}
+
+@media only screen and (max-width: 480px) {
+    .giveaway__player {
+        margin: 2rem;
+        margin-top: 5rem;
+    }
+
+    .giveaway__steps ul li {
+        font-size: 1.3rem;
+        margin-left: -30px;
+        font-weight: 700;
+    }
+
+    .giveaway__rule ul li {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .giveaway__vimeo__container,
+    .giveaway__even__vimeo__container {
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+    .giveaway__new__cards {
+        position: absolute;
+        background-color: white;
+        padding: 2rem .75rem;
+        width: 200px;
+        height: 150px;
+        border-radius: 0.75rem;
+        text-align: center;
+        font-weight: bold;
+        box-shadow: 10px 10px 30px rgb(74, 74, 74);
+
+    }
+
+    .position__odd {
+        top: -2rem;
+        left: 25%;
+    }
+
+    .position__even {
+        top: -2rem;
+        left: 25%;
+    }
+
+    .position__odd::before {
+        content: "";
+        position: absolute;
+        inset: -5px;
+        transform: translate(0px, 0px);
+        z-index: -1;
+        background: linear-gradient(135deg, #e68af8, #8be0f7, #d4c8fc, #fadcfb);
+        border-radius: 0.75rem;
+        /* filter: blur(10px); */
+    }
+
+    .position__even::before {
+        content: "";
+        position: absolute;
+        inset: -5px;
+        transform: translate(0px, 0px);
+        z-index: -1;
+        background: linear-gradient(135deg, #e68af8, #8be0f7, #d4c8fc, #fadcfb);
+        border-radius: 0.75rem;
+        /* filter: blur(10px); */
+    }
+
+    .giveaway__getInspired__partition {
+        display: none;
+    }
+}

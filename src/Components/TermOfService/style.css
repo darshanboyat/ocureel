@@ -1,0 +1,34 @@
+.tos__link{
+    /* word-break: break-all; */
+}
+.tos__heading{
+    font-family: GoodBrush;
+}
+.tos__subheading{
+    font-family: Gilroy;
+    font-size: medium;
+}
+.tos__container h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+.tos__container p{
+    font-size: 16px;
+    text-align: justify;
+}
+.tos__container h5{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+    .tos__container{
+        padding: .5rem !important;
+        width: 100%;
+
+
+    }
+    .privacy__links{     
+        /* word-break: break-all; */
+    }
+}

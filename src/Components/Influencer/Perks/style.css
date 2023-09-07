@@ -1,0 +1,65 @@
+.perks__main {
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    padding: 2rem;
+}
+
+.perks__cards {
+    width: 35%;
+}
+
+.perks__card {
+    display: flex;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(19, 17, 118, 3%);
+    margin: 1rem 0rem;
+}
+
+.perks_card_2 {
+    background-color: white;
+    box-shadow: 1px 2px 20px rgb(166, 166, 166);
+}
+
+.perks__card div h1 {
+    font-size: 1.8rem;
+}
+
+.perks__card img {
+    width: 10%;
+    height: 10%;
+}
+
+.perks__head {
+    width: 30%;
+}
+
+.perks__head h1 {
+    font-family: GoodBrush;
+}
+.perks__head img{
+    width: 100%;
+}
+@media only screen and (max-width: 480px) {
+    .perks__card {
+        width: 75vw;
+        margin: 1rem 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .perks__card img{
+       width: 40%;
+    }
+    .perks__main{
+        flex-direction: column-reverse;
+        margin-left: 1rem;
+    }
+    .perks__head h1 {
+        width: 100vw;
+        margin-left: 1rem;
+    }
+    .perks__head img{
+        width: 300px;
+    }
+}

@@ -1,0 +1,217 @@
+.instruction__card__container {
+  width: 72vw;
+}
+
+.leaderboard__card1 {
+  display: flex;
+  justify-content: space-around;
+  width: 84%;
+  text-align: left;
+}
+
+.leaderboard__card1__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: 6rem;
+}
+
+.leaderboard__card1__text__content {
+  font-size: small;
+  font-weight: 600;
+  font-family: Gilroy;
+  width: 480px;
+  line-height: 1.5rem;
+}
+
+.leaderboard {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* overflow-x: hidden; */
+  align-items: center;
+}
+
+.leaderboard__card2 {
+  position: relative;
+  overflow: hidden;
+  background-color: #fafafa;
+  height: 70vh;
+  padding: 1rem 15rem;
+}
+.leaderboard__card2 div p{
+  width: 50%;
+}
+
+.leaderboard__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.leaderboard__header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.leaderboard__button {
+  background-color: #20c997;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.leaderboard__button:hover {
+  background-color: #28a745;
+  cursor: pointer;
+}
+
+.leaderboard__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.leaderboard__item {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.leaderboard__item-number {
+  background-color: #20c997;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+
+.leaderboard__item-number {
+  background-color: #20c997;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 30px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.leaderboard__item-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.leaderboard__item-name {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.leaderboard__item-score {
+  color: #999;
+  font-size: 16px;
+}
+
+.spectator {
+  margin: 0;
+  padding: 0;
+  margin-left: -8rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .leaderboard {
+    width: 100%;
+  }
+}
+
+.point__guide__card__group {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  justify-content: center;
+  width: 70%;
+  margin: 2% 0% 5% 0%;
+
+}
+
+@media only screen and (max-width: 480px) {
+  .instruction__card__container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .leaderboard {
+    width: 100%;
+  }
+
+  .leaderboard__card1 {
+    flex-direction: column;
+    height: auto;
+  }
+  .leaderboard__card2 div p{
+    width: 100%;
+  }
+  
+
+  .leaderboard__card1__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: -2rem;
+  }
+  .play__card1__text__content{
+    text-align: center;
+    margin-left: -1rem;
+  }
+  
+
+  .leaderboard__smilies img {
+    width: 100%;
+  }
+
+  .point__guide__card__group {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2%;
+    justify-content: center;
+    width: 100vw;
+    margin: 7% 0% 10% 10%;
+    margin-bottom: 4rem;
+  }
+
+  .spectator {
+    width: 100vw;
+    margin-left: 1rem;
+  }
+
+  .leaderboard__card2 {
+    width: 95%;
+    padding: 1%;
+    height: fit-content;
+    padding: 1rem 0.5rem;
+  }
+
+  .leaderboard__card1__text__content {
+    word-wrap: break-word;
+    width: 95%;
+  }
+}

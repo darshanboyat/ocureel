@@ -1,0 +1,54 @@
+.about__ocureel{
+    display: flex;
+    justify-content: space-between;
+}
+.about___ocureel_section_one{
+    padding: 1rem 2rem; 
+    width: 27%;
+}
+.about___ocureel_section_one h1{
+    font-family: GoodBrush;
+    font-size: 2.6rem;
+}
+.about___ocureel_section_two{
+    width: 27%;
+    padding-top: 2.5rem;
+}
+.about__ocureel__section__two__content{
+    display: flex;
+    margin-top: 1rem;
+}
+.about__phone{
+    width: 40%;
+}
+@media only screen and (max-width: 480px) {
+    .about__ocureel {
+        flex-direction: column;
+    }
+    .about__phone{
+        width: 100%;
+    }
+    .about___ocureel_section_two, .about___ocureel_section_one{
+        width: 100vw;
+        padding: 1rem 0;
+    }
+    .about___ocureel_section_one h1{
+        font-size: 2.3rem;
+        width: 80vw;
+    }
+  }
+@media only screen and (max-width: 800px) {
+    .about__ocureel {
+        flex-direction: column;
+    }
+    .about__phone{
+        width: 100%;
+    }
+    .about___ocureel_section_two, .about___ocureel_section_one{
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .about___ocureel_section_one h1{
+        font-size: 2.3rem;
+    }
+  }

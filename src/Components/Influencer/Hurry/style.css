@@ -1,0 +1,33 @@
+.hurry__main{
+    background-color: rgba(19, 17, 118, 3%);
+    text-align: center;
+    padding: 4rem;
+}
+.hurry__head{
+    font-family: GoodBrush;
+}
+.hurry__content{
+    padding: 2rem 15rem;
+    font-family: Gilroy;
+    font-weight: bold;
+}
+.hurry__btn{
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 20px rgb(217, 217, 217);
+    background-color: white;
+    font-size: 1.5rem;
+    font-family: Gilroy;
+    font-weight: 900;
+}
+@media only screen and (max-width: 480px) {
+    .hurry__content{
+        padding: 0;
+        font-size: medium;
+    }
+    .hurry__btn{
+        padding: 1rem 3rem;
+        font-size: 1rem;
+    }
+}
