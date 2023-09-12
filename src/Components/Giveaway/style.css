@@ -1,12 +1,61 @@
+@font-face {
+    font-family: Monument-Bold;
+    src: url(../../fonts/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf);
+}
+
+@font-face {
+    font-family: Monument;
+    src: url(../../fonts/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Regular.otf);
+}
+
 .container {
     max-width: 1450px;
     width: 100%;
     margin: 0 auto;
 }
 
-.giveaway__player #vp-preview{
+/* YourComponent.css */
+.text-container {
+    background-color: transparent;
+    white-space: nowrap;
+    position: relative;
+}
+
+.section_heading h4 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -1rem;
+}
+
+.filled-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 40%;
+    font-size: 2rem;
+    font-family: Monument-Bold;
+}
+
+.stroked-text {
+    display: inline-block;
+    -webkit-transform: scale(1.15, 1);
+    /* Safari and Chrome */
+    transform: scale(1.15, 1);
+    /* W3C */
+    font-family: Monument;
+    font-size: 8rem;
+    word-spacing: 0.1rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.345);
+    text-stroke: 1px rgba(0, 0, 0, 0.345);
+}
+
+
+.giveaway__player #vp-preview {
     transform: scaleX(2);
 }
+
 .giveaway__video__main {
     display: flex;
     flex-direction: row;
@@ -21,11 +70,13 @@
 }
 
 .giveaway__heading {
-    font-family: GoodBrush;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.giveaway__heading img {
+    width: 400px;
 }
 
 .giveaway__heading h1 {
@@ -63,8 +114,53 @@
     margin-left: -6rem;
 }
 
-.price__money h3 {
+.price__money {
+    background-color: #fff7f7;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+
+}
+
+.price__money h1 {
     font-weight: 700;
+    font-family: Monument-Bold;
+    text-transform: uppercase;
+    padding: 0% 2rem;
+}
+
+.price__money span {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.price__money span h4 {
+    width: 65%;
+}
+
+.download_image {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.download_image img {
+    width: 50%;
+}
+
+.steps {
+    text-align: center;
+    width: 100%;
+}
+
+.step1 {
+    padding: 0 4rem;
+}
+
+.step2 {
+    padding: 0 16rem;
 }
 
 .giveaway__waiting h2 {
@@ -80,6 +176,11 @@
 
 .giveaway__steps ul li span {
     color: rgba(0, 0, 0, 0.5);
+}
+
+.giveaway__rule h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .giveaway__rule ul li {
@@ -160,17 +261,13 @@
         margin: 2rem auto;
         margin-left: -12rem;
     }
+
 }
-
-
-
-
-
 
 /* video cards */
 .relative {
     position: relative;
-    max-width: 100vw;
+    /* max-width: 100vw; */
     margin: 4rem 0;
 }
 
@@ -244,7 +341,6 @@
 
     }
 
-
     .giveaway__new__cards {
         position: absolute;
         background-color: white;
@@ -259,13 +355,13 @@
     }
 
     .position__odd {
-        top: -2rem;
-        left: 25%;
+        top: -3rem;
+        left: 32%;
     }
 
     .position__even {
-        top: -2rem;
-        left: 25%;
+        top: -3rem;
+        left: 32%;
     }
 
     .position__odd::before {
@@ -293,4 +389,63 @@
     .giveaway__getInspired__partition {
         display: none;
     }
+}
+
+
+@media(max-width: 767px) {
+    .price__money {
+        padding: 0rem;
+    }
+
+    .step2 {
+        padding: 0;
+    }
+
+    .download_image img {
+        width: 100%;
+    }
+
+    .filled-text {
+        font-size: 1.1rem;
+        top: 28%;
+    }
+
+    .stroked-text {
+        display: inline-block;
+        -webkit-transform: scale(1.15, 1);
+        /* Safari and Chrome */
+        transform: scale(1.15, 1);
+        /* W3C */
+        font-family: Monument;
+        font-size: 3rem;
+        word-spacing: 0.1rem;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.345);
+        text-stroke: 0.5px rgba(0, 0, 0, 0.345);
+    }
+}
+
+/*  */
+
+h2.step-header {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #a955f9;
+    font-style: italic;
+    padding-top: 2%;
+    font-family: GoodBrush;
+}
+
+.img-step {
+    margin: 2% auto;
+    display: block;
+}
+
+.step2-title {
+    text-align: center;
+    color: #a955f9;
+    font-size: 2rem;
+    font-weight: 550px;
 }
